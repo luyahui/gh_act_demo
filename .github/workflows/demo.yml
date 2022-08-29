@@ -2,7 +2,12 @@ name: GitHub Actions Demo
 on:
   push:
     branches: [main]
-  workflow_dispatch
+  workflow_dispatch:
+    inputs:
+      tags:
+        description: 'Test scenario tags'
+        required: false
+        type: boolean
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
