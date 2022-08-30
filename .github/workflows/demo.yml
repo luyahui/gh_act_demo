@@ -3,8 +3,8 @@ name: GitHub Actions Demo
 on:
   push:
     branches:
-    - main
-    - actions
+    - 'main'
+    - 'actions'
   workflow_dispatch:
     inputs:
       name:
