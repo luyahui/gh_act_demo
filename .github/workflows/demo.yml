@@ -1,18 +1,17 @@
 name: GitHub Actions Demo
 
-# on:
-#   push:
-#     branches:
-#     - actions
-#     - 'main'
-#   workflow_dispatch:
-#     inputs:
-#       name:
-#         description: 'Person to greet'
-#         default: 'World'
-#         required: true
+on:
+  push:
+    branches:
+    - actions
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Person to greet'
+        default: 'World'
+        required: true
 
-on: [push]
+# on: [push]
   
 jobs:
   Explore-GitHub-Actions:
